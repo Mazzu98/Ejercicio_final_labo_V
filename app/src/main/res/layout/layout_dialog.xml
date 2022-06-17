@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Usuario"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario: "
+            android:textAppearance="?android:attr/textAppearanceSmall">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:id="@+id/etNombre" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rol: "
+            android:textAppearance="?android:attr/textAppearanceSmall">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spRol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/opciones">
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin: "
+            android:textAppearance="?android:attr/textAppearanceSmall">
+        </TextView>
+
+
+        <ToggleButton
+            android:id="@+id/tbAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ToggleButton>
+
+    </LinearLayout>
+
+</LinearLayout>
